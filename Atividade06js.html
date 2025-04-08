@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06 JS Saudações personalizada</title>
+</head>
+<body>
+    <h1>Atividade 06 JS Saudações personalizada</h1>
+    
+    <script>
+
+        // 8. Saudação personalizada.
+
+        // Criar variavel sem valor
+        let nome;
+        
+        alert("Ola sejá bem vindo");
+        nome = prompt("Qual o seu nome?");
+        document.write(`Sejá Bem Vindo, ${nome} <br>`);
+        
+        // 9. Converção de temperatura
+        // Criar variavel
+        let celsius;
+        
+        // Obtém o valor digitado pelo usuário
+        
+            celsius = prompt("informe a temperátura em graus celsius!");
+            fahrenheit = (celsius * 1.8) + 32;
+            document.write(`Atemperatuara em gráus Fahrenheit é, ${fahrenheit} <br>`);
+            
+        //10. Calculadora simples    
+        
+        document.write(`Calculadora simples <br>`);
+
+        let nr1 = Number(prompt("Informe o primeiro número: "));
+        let nr2 = Number(prompt("Informe o segundo número: "));
+
+        let soma;
+        soma = nr1 + nr2;
+        let subitracao;
+        subitracao = nr1 - nr2;
+        let somamutiplicacao;
+        mutiplicacao = nr1 * nr2;
+        let divisao;
+        divisao = nr1 / nr2;
+
+        document.write(` ${nr1} + ${nr2} = ${soma}<br>`);
+        document.write(` ${nr1} - ${nr2} = ${subitracao}<br>`);
+        document.write(` ${nr1} * ${nr2} = ${mutiplicacao}<br>`);
+        document.write(` ${nr1} / ${nr2} = ${divisao}<br>`);
+
+    //Parte 3: Exercícios Práticos (Intermediários)
+    
+    // 11. Verificação de maioridade
+
+    
+    let idade 
+    let resultado
+    
+    idade = prompt("informe sua idade para sabeer se é de maior!");
+    
+    if ( idade >= 18) {
+        document.write(`É maior de idade, ${idade} =  ${resultado} <br>`);
+    }else {
+        document.write(`É menor de idade, ${idade} = ${resultado} <br>`);
+    } 
+
+    // 12. Cálculo de desconto
+
+    let precoOriginal;
+    let valordesconto;
+    let precoFinal;
+    let desconto;
+
+    precoOriginal = prompt("informe o valor do produto em R$");
+    desconto = prompt("informe o valor do desconto");
+
+    valordesconto = precoOriginal * (desconto / 100);
+    precoFinal = precoOriginal - valordesconto;
+    
+    document.write(`O valor total a pagar é R$, ${precoFinal} <br>`);
+
+    // 13. Conversão de moedas
+
+    let valor
+    let conversao
+    let cotaccao = 5.78;
+     
+    valor = prompt("informe o valor em R$ para conversão!");
+
+    conversao = valor * cotaccao
+
+    document.write(`O valor da conversao é de USD, ${conversao} <br>`);
+
+    </script>
+
+
+</body>
+</html>
